@@ -11,53 +11,37 @@ body {
 }
 
 
-#box1 {
+.parent{
+     background-color: crimson;
+     padding: 10px;
+     display: flex;
 
-    height: 200px;
-    width: 200px;
-    background-color: red;
-    color: white;
-
-
-    position: absolute;
-    z-index: 9;
-
-    right: 0;
-    top: 0;
 }
 
+.inner{
+     background-color: lightseagreen;
+     display: flex;
+     gap: 10px;
 
-#box2 {
-
-    height: 200px;
-    width: 200px;
-    background-color: green;
-    color: white;
-
-    position: absolute;
-    z-index: 8;
-
-    left: 300px;
-    top: 40px;
+     animation-name: move;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-delay: 1s; 
+     animation-duration: 5s;
 }
 
+h4{
+     background: royalblue;
+     padding: 15px;
+     font-size: 20px;
 
-#box3 {
-
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    color: white;
 }
 
-
-h1 {
-    color: blue;
-    background-color: green;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    
-    transform: translate(-50%, -50%);
+@keyframes move {
+     from{
+          transform: translateX(0);
+     }
+     to{
+          transform: translateX(-100%);
+     }
 }
