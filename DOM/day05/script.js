@@ -65,9 +65,10 @@ btn.addEventListener('click', e => {
 
 
     setTimeout(() => {
+        clearInterval(interval);
         gameOver.style.display = "flex";
         restart();
-        clearInterval(interval);
+        
     }, 20000);
 });
 
@@ -89,6 +90,6 @@ const restart = () => {
         box.remove();
 
         gameOver.style.display = "none";
-        
+
     }, 3000);
 };
