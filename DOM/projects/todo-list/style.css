@@ -1,0 +1,87 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'helvetica neue';
+}
+html,
+body {
+     height: 100%;
+     width: 100%;
+}
+
+
+body{
+    background: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    padding: 20px;
+    height: 60%;
+    width: 60%;
+    background-color: rgb(124, 122, 122);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+#add{
+    padding: 5px;
+    background: rgb(90, 92, 191);
+    color: black;
+    border-radius: 10px;
+    border: 10px;
+    cursor: pointer;
+}
+
+
+.todo-list{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+#btns{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(173, 214, 131);
+}
+
+.btn{
+    padding: 7px;
+    border-radius: 15px;
+}
+
+#edit{
+    background-color: green;
+    color: white;
+}
+#delete{
+    background-color: red;
+}
