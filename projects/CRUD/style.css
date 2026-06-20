@@ -1,0 +1,154 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'helvetica neue';
+}
+html,
+body {
+     height: 100%;
+     width: 100%;
+}
+
+
+body main{
+    height: 100%;
+    width: 100%;
+    background: rgb(190, 190, 190);
+    padding: 10px;
+}
+
+main nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(54, 54, 202);
+    color: white;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+main nav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+main .products {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+main .products .product-card {
+    height: fit-content;
+    width: 20%;
+    border-radius: 10px;
+    border: 3px solid rgb(92, 87, 87);
+    padding: 5px;
+    background: white;
+
+    box-shadow: 3px 0px 10px rgb(56, 55, 55);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+main .products .product-card .img {
+    height: 70%;
+    width: 100%;
+}
+
+main .products .product-card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+main .products .product-card .text {
+    width: 100%;
+    background-color: rgb(175, 175, 64);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+main .products .product-card .btns{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+main .products .product-card .btns button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: none;
+}
+
+main .form{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.413);
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .form form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    
+
+}
+
+main .form form input{
+    padding: 10px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+main .form form button{
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main .form .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+}
